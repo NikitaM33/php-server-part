@@ -1,81 +1,109 @@
-*{
-    margin: 0;
-    padding: 0;
+* {margin: 0; padding: 0}
+a {text-decoration: none}
+p {
+	margin: 15px 0;
 }
 
-body, button, input, h1{
-    font-family: "Roboto", sans-serif;
+body, 
+button, 
+input[type=text], 
+input[type=password], 
+h1, 
+textarea {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
 }
 
-h1{
-    color: #576369;
-    font-size: 1.3rem;
+h1 {
+	color:#004e75;
+	font-size: 20px;
 }
 
-a{
-    text-decoration: none;
+table {
+	width: 100%; 
+	margin-top:20px;
 }
 
-p{
-    margin: 15px 0;
+td {
+	padding: 15px; 
+	text-align: center;
 }
 
-button{
-    margin-right: 1em;
-    padding: 0.5em;
-    font-size: 1.1rem;
-    color: #fff;
-    background: #34C0E2;
-    border: 1px solid #34C0E2;
-    outline: none;
-    cursor: pointer;
+button {
+	background: #34C0E2;
+	color: #fff;
+	border: 1px solid #34C0E2;
+	padding: 8px;
+	border-radius: 8px;
 }
 
-button:hover{
-    opacity: 0.7;
+button:hover {
+	cursor:pointer;
+	opacity: 0.8;
 }
 
-input[type=text], input[type=password]{
-    padding: 0.5em;
-    border: 1px solid #aeaeae;
-    color: #333;
-    outline: none;
+input[type=text], 
+input[type=password], 
+textarea {
+	padding: 8px;
+	border: 1px solid rgb(122, 122, 122);
+	border-radius: 8px;
+	color: rgb(0, 112, 9);
+	width: 300px;
+	outline: none;
 }
 
-.wrapper, .menu, .content, body, html{
-    min-height: 100%;
-    height: 100%;
+textarea {
+	height: 250px;
+	resize: none;
 }
 
-.wrapper{
-    display: flex;
+.wrapper, 
+.content, 
+.menu, 
+body, 
+html {
+	height: 100%;
 }
 
-.content{
-    flex: 1;
-    background: #fcfcfd;
+.wrapper {
+	display: flex;
 }
 
-.block{
-    margin: 40px;
-    padding: 20px;
-    background: #fff;
-    border: 1px solid #aeaeae;
+.content {
+	flex: 1;
+	background: #FCFCFD;
 }
 
-.menu{
-    width: 200px;
-    padding: 1em;
-    background: #464E78;
+.block {
+	margin: 40px;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid rgb(20, 37, 90);
 }
 
-.menu a{
-    display: block;
-    padding: 0.5em 1em;
-    text-transform: uppercase;
-    color: rgb(135, 141, 170);
+.reviews {
+	background: #F1F6FC;
+	color: #000;
+	padding: 15px;
+	border-radius: 10px;
+	margin: 10px 0;
 }
 
-.menu a:hover{
-    color: rgb(180, 186, 212);
+.reviews span {
+	display: block;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.menu {
+	width: 200px;
+	background: #464E78;
+}
+
+.menu a {
+	display:
+	block; color: #fff;
+	padding: 10px 25px;
+	text-transform: uppercase;
 }
